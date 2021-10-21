@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sort It Out</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+      integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <div id="arrayContainer">
+      <h1 id="heading">Welcome! Create your array by choosing the size</h1>
+    </div>
+
+    <div id="controlOptions">
+      <select
+        class="form-select"
+        id="selectAlgo"
+        aria-label="Default select example"
+      >
+        <option selected>Sorting Algorithms</option>
+        <option value="Bubble Sort">Bubble Sort</option>
+        <option value="Quick Sort">Quick Sort</option>
+        <option value="Merge Sort">Merge Sort</option>
+        <option value="Insertion Sort">Insertion Sort</option>
+        <option value="Selection Sort">Selection Sort</option>
+        <option value="Heap Sort">Heap Sort</option>
+        <option value="Radix Sort">Radix Sort</option>
+        <option value="Bucket Sort">Bucket Sort</option>
+      </select>
+      <div class="array-slider">
+        <label for="customRange3" class="form-label">Size</label>
+        <input
+          id="selectSize"
+          type="range"
+          class="form-range"
+          min="10"
+          max="50"
+          step="10"
+          id="customRange3"
+        />
+      </div>
+      <button id="sortBtn">Sort</button>
+    </div>
+    <script src="main.js" type="module"></script>
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+      integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+      integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
