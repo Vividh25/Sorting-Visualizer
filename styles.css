@@ -24,6 +24,10 @@ body {
     background-color: darkgoldenrod;
     transition: 0.2s all ease;
     margin-left: 10px; 
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
 }
 
 #controlOptions {

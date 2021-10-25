@@ -40,7 +40,7 @@ const createArray = (e) => {
     element.style.transform = `translate(${50}%) translate(${-50}%)`;
 
     const value = document.createElement('label');
-    value.style.display = 'none';
+    value.style.color = 'white';
     value.innerHTML = ele;
 
     element.appendChild(value);
@@ -56,7 +56,11 @@ const selectSortingAlgo = (e) => {
 const sort = () => {
   switch (selectedAlgo) {
     case 'Bubble Sort':
-      Algos.bubbleSort(arr, arraySize);
+      Algos.bubbleSort(arraySize);
+      break;
+    case 'Quick Sort':
+      Algos.quickSort(0, arraySize - 1);
+      break;
   }
 };
 
