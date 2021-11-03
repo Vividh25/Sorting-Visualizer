@@ -46,6 +46,7 @@ const createArray = (e) => {
     element.appendChild(value);
     arrayContainer.appendChild(element);
   });
+  console.log(arrayContainer.children);
 };
 
 const selectSortingAlgo = (e) => {
@@ -59,9 +60,6 @@ const sort = () => {
       break;
     case 'Quick Sort':
       Algos.quickSort(0, arraySize - 1);
-      break;
-    case 'Merge Sort':
-      Algos.mergeSort(0, arraySize - 1);
       break;
   }
 };
